@@ -1,0 +1,16 @@
+Steps to execute the bat file
+--------------------------------------
+Prerequisites:User should download the Package file i.e STRUCTURES package file or structures & fluids combined package file whichever is suitable to install from the Ansys customer portal.
+
+1). Create a new file with extension bat or copy the provided file to the machine where you want to execute the file.
+2). Edit the bat file and change the following variable argumnets as per your requirement.
+    i. (line-9)set DOWNLOAD_DIR-->the directory where the package or zip file is downloaded.
+   ii. (line-11)set INSTALL_DIR-->the directory where you want to install the application
+  iii. (line-13)set PACKAGE-->the name of the executable or package downloaded.
+   iv. (line-34)In the powershell line change the arguments of the
+       -LiteralPath-->the path where the package is downloaded along with the package name at the end
+       -DestinationPath-->give the same path as the downloaded directory path.
+3). After doing the changes save the bat file and just by clicking on the file user can execute the script.
+
+
+Note: If license  manager is not required user can remove or comment out the License manager install command at the end of the file(line-49).
